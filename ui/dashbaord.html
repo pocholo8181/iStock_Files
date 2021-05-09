@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iStock</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">iStock</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="dashbaord.html" class="navbar__links active">Dashboard</a>
+          </li>
+          <li class="navbar__item">
+            <a href="inventory.html" class="navbar__links">Inventory</a>
+          </li>
+          <li class="navbar__item">
+            <a href="feedback.html" class="navbar__links" >Feedback</a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <h1 class="center">Dashboard<i class="fas fa-shipping-fast"></i></h1>
+    <br>
+    <table class="center tableDesign">
+        <tr>
+            <th>Product</th>
+            <th>Variant</th>
+            <th>Bar Code</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+
+        <tr>
+            <td>Item1</td>
+            <td>Sample</td>
+            <td>1234567890</td>
+            <td>P250</td>
+            <td>142</td>
+        </tr>
+
+        <tr>
+            <td>Item2</td>
+            <td>Sample</td>
+            <td>1346792468</td>
+            <td>P150</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>Item3</td>
+            <td>Sample</td>
+            <td>1234567890</td>
+            <td>P170</td>
+            <td>122</td>
+        </tr>
+
+        <tr>
+            <td>Item4</td>
+            <td>Sample</td>
+            <td>0987654321</td>
+            <td>P190</td>
+            <td>25</td>
+        </tr>
+
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>

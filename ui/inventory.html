@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iStock</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="inventorystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">iStock</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="dashbaord.html" class="navbar__links" ">Dashboard</a>
+              </li>
+              <li class="navbar__item">
+                <a href="inventory.html" class="navbar__links active"">Inventory</a>
+              </li>
+              <li class="navbar__item">
+                <a href="feedback.html" class="navbar__links">Feedback</a>
+              </li>
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links">Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <div class="hero" id="home">
+        <div class="hero__container">
+          <!--Login and Sign Up Form-->
+          <center><h1>Inventory<i class="fas fa-cubes"></i></h1>
+        <br>
+			<div class="crud">
+				<input class="allInput" placeholder="Search" type="text">
+				<input class="btn" type="submit" value="Search"/><br><br>
+			</div>
+            </center>
+    
+    <br>
+    <div class="pos">
+        <div class="center">
+            <button class="open-button" onclick="openLoginForm()">Create</button>
+          </div>
+          <div class="popup-overlay"></div>
+          <div class="popup">
+            <div class="popup-close" onclick="closeLoginForm()">×</div>
+            <div class="form">
+              <div class="header">
+                Create
+              </div>
+              <div class="element">
+                <label for="username">Product</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element">
+                <label for="username">Variant</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element">
+                <label for="username">Barcode</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element">
+                <label for="username">Price</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element">
+                <label for="password">Stock</label>
+                <input type="password" id="password">
+              </div>
+              <div class="element">
+                <button>Create</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="center2">
+            <button class="open-button" onclick="openLoginForm2()">Update</button>
+          </div>
+          <div class="popup-overlay2"></div>
+          <div class="popup2">
+            <div class="popup-close2" onclick="closeLoginForm2()">×</div>
+            <div class="form2">
+
+              <div class="header2">
+                Update
+              </div>
+              <div class="element2">
+                <label for="username">Product</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element2">
+                <label for="password">Variant</label>
+                <input type="password" id="password">
+              </div>
+              <div class="element2">
+                <label for="username">Barcode</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element2">
+                <label for="password">Price</label>
+                <input type="password" id="password">
+              </div>
+              <div class="element2">
+                <label for="username">Stock</label>
+                <input type="text" id="username">
+              </div>
+              <div class="element2">
+                <button>Update</button>
+              </div>
+            </div>
+          </div>
+
+
+    <div class="center3">
+        <button class="open-button3">Delete</button>
+      </div>
+    </div>
+            
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="tableDesign">
+        <tr>
+            <th>Product</th>
+            <th>Variant</th>
+            <th>Bar Code</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+
+        <tr>
+            <td>Item1</td>
+            <td>Sample</td>
+            <td>1234567890</td>
+            <td>P250</td>
+            <td>142</td>
+        </tr>
+
+        <tr>
+            <td>Item2</td>
+            <td>Sample</td>
+            <td>1346792468</td>
+            <td>P150</td>
+            <td>16</td>
+        </tr>
+
+        <tr>
+            <td>Item3</td>
+            <td>Sample</td>
+            <td>1234567890</td>
+            <td>P170</td>
+            <td>122</td>
+        </tr>
+
+        <tr>
+            <td>Item4</td>
+            <td>Sample</td>
+            <td>0987654321</td>
+            <td>P190</td>
+            <td>25</td>
+        </tr>
+
+    </table>
+
+
+
+    <script src="app.js"></script>
+    <script src="inventoryjs.js"></script>
+</body>
+</html>

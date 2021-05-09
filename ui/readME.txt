@@ -1,0 +1,1 @@
+Yung sa login pag pinindot mo yun since kagabe di pa functioning mga button need ko muna mag lagay ng link para makalpat ng pages.

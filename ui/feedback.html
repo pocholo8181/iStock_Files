@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iStock</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">iStock</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="dashbaord.html" class="navbar__links" id="home-page">Dashboard</a>
+              </li>
+              <li class="navbar__item">
+                <a href="inventory.html" class="navbar__links" id="about-page">Inventory</a>
+              </li>
+              <li class="navbar__item">
+                <a href="feedback.html" class="navbar__links active" id="about-page">Feedback</a>
+              </li>
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Logout</a>
+            </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+    <h1 class="center">Feedback<i class="fas fa-hands-helping"></i></h1>
+    <br>
+    <div class="container">
+        <form>
+        <div class="feedbackInputs">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <!--<input type="submit" value="Submit">-->
+              <button onclick="Submit()">Submit</button>
+          </div>
+        </form>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>

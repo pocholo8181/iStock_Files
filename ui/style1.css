@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  #navbar__logo {
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #45a049;
+
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #45a049;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+    }
+    .active {
+        border-bottom: 4px solid #45a049;
+        padding:50px;
+      }
+    
+    .navbar__menu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: -1;
+    }
+  
+    .navbar__menu.active {
+      background: #131313;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 60vh;
+      font-size: 1.6rem;
+    }
+  
+    #navbar__logo {
+      padding-left: 25px;
+    }
+  
+    .navbar__toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+  
+    .navbar__item {
+      width: 100%;
+    }
+  
+    .navbar__links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .navbar__btn {
+      padding-bottom: 2rem;
+    }
+  
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80px;
+      margin: 0;
+    }
+  
+    #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+  
+    .navbar__toggle .bar {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  
+
+.center{
+    text-align: center;
+
+}
+
+.active {
+    border-bottom: 4px solid #45a049;
+  }
+
+
+/*for all table designs*/
+.tableDesign{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.tableDesign th{
+    background-color: #333;
+    color: white;
+}
+
+.tableDesign tr:nth-child(odd){
+    background-color: rgb(243, 226, 226);
+}
+.tableDesign tr:nth-child(even){
+    background-color: rgb(207, 196, 196);
+}
+
+.crud input[type=submit]{
+    background-color: #333;
+    border-color: transparent;
+    font-size: 23px;
+    color: white;
+    border-radius: 5px;
+	padding: 3px;
+}
+
+.crud input[type=submit]:hover{
+    background-color: #45a049;
+    border-style: solid;
+    border-color: transparent;
+    transition: 0.5s;
+}
+
+.crud input[type=text]{
+    font-size: 23px;
+    border-radius: 5px;
+}
+
+.crud input[type=password]{
+    font-size: 23px;
+    border-radius: 5px;
+}
+
+.loginContainer{
+    background-color: #fffafa;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 23%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*FeedBack Design*/
+.feedbackInputs input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+      width:70%;
+      margin:auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/*Search Box and Button Styles*/
+#searchbox{
+    width:40%;
+    margin:auto;
+}
+
+#searchbox input,button{
+    width:100%;
+    font-size: 18px;
+    padding:12px;
+    background: #333333;
+    color: white;
+}
+#searchbox button{
+    width:25%;
+    background:#202020;
+    color:white;
+    float:right;
+    margin-top:7px;
+    border-left:0px;
+}
+
+#btn{
+    padding-top:10px;
+    width:25%;
+    margin:auto;
+}
+#btn button{
+    border-radius: 5px;
+    margin-left:8px;
+    width:25%;
+    background:#202020;
+    color:white;
+    float:right;
+    border-left:0px; 
+}
+
+
+
+
+
+/*Responsive Web CSS*/
+@media screen and (max-width:1024px){
+    .nav-button{
+        width:60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    /*Login style*/
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    .left{
+        width:100%;
+        margin-top:0;
+    }
+    .left img{
+        width:100px;
+        height:100px;
+    }
+    .left h1{
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+    
+    .right{
+        width:100%;
+        height:500px;
+        margin-top:40%;
+        background:#333;
+    }
+
+    .login .login1{
+        width:100%;
+        height:50px;
+        color: #f2f2f2;
+        background-color: #45a049;
+        padding:10px;
+        border-radius: 5px;
+    }
+    .login .login1:hover{
+        width:100%;
+        height:50px;
+        color: #f2f2f2;
+        background-color: #333;
+        padding:10px;
+        border-radius: 5px;
+    }
+    /*End Of Login Style*/
+
+    .nav-links{
+        color:rgb(226,226,226);
+        position:absolute;
+        right:0px;
+        height:92vh;
+        top:8vh;
+        background-color:#ff4d4d;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        width:100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-link li{
+        opacity: 0;
+    }
+    .nav-button:hover:before{
+        transform: scaleX(1);
+       transform-origin: left;
+   }
+    .burger{
+        display: block;
+    }
+
+    .center{
+        text-align: center;
+        font-size: 22px;
+        
+    }
+
+    /*for all table designs*/
+.tableDesign{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.tableDesign th{
+    background-color: #333;
+    color: white;
+    font-size: 13px;
+}
+.tableDesign td{
+    font-size: 13px;
+}
+
+.tableDesign tr:nth-child(odd){
+    background-color: rgb(243, 226, 226);
+}
+.tableDesign tr:nth-child(even){
+    background-color: rgb(207, 196, 196);
+}
+
+
+
+/*Search Box and Button Styles*/
+#searchbox{
+    width:90%;
+    margin:auto;
+}
+
+#searchbox input,button{
+    width:55%;
+    border:2px solid #202020;
+
+    font-size: 13px;
+    padding:5px;
+    background:transparent;
+    color:#202020;
+
+}
+#searchbox button{
+    width:40%;
+    background:#202020;
+    color:white;
+    float:right;
+    margin-top:7px;
+    border-left:0px;
+}
+
+#btn{
+    padding-top:10px;
+    width:60%;
+    margin:auto;
+}
+#btn button{
+    border-radius: 5px;
+    margin-left:8px;
+    width:25%;
+    background:#202020;
+    color:white;
+    float:right;
+    border-left:0px; 
+}
+
+}
